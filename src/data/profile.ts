@@ -5,30 +5,27 @@ export const profile = {
   
   about: {
     title: "About Me",
-    description: `I'm a passionate developer with a unique blend of web development and AI expertise. 
-    With a strong foundation in modern web technologies and a deep understanding of generative AI, 
-    I create innovative solutions that leverage the best of both worlds.`,
+    description: `As a System Administrator turned Web Developer, I bring a unique perspective to building AI-powered applications. My background in infrastructure and systems has given me a deep understanding of what makes applications robust and scalable, while my passion for modern web development allows me to create intuitive, user-focused solutions. I specialize in developing applications that leverage generative AI, combining Next.js, Firebase, and various AI technologies to build tools that solve real-world problems. My transition from managing systems to crafting AI-enhanced web experiences has taught me that the best applications aren't just about code – they're about creating reliable, secure, and efficient solutions that make a difference. Currently, I'm focused on building projects that demonstrate how AI can enhance traditional web applications, from personalized fitness assistants to modernized e-commerce platforms.`,
     
     experience: [
       {
-        title: "Senior Full Stack Developer",
-        company: "Tech Company",
-        period: "2022 - Present",
-        description: "Leading development of modern web applications using Next.js and Node.js"
-      },
-      {
-        title: "AI Solutions Architect",
-        company: "AI Startup",
-        period: "2021 - 2022",
-        description: "Designed and implemented AI-powered solutions using LangChain and OpenAI"
+        title: "System Administrator",
+        company: "Ilahia College of Arts and Science",
+        period: "Aug 2022 - Dec 2024",
+        description: "As a System Administrator, I was responsible for overseeing the management and maintenance of the IT infrastructure to ensure optimal system reliability and security. I provided technical support to users, addressing their issues promptly and effectively. My role involved optimizing network performance and implementing necessary software updates and backups. Additionally, I collaborated with other departments to understand their IT needs and provide tailored solutions. Through proactive monitoring and troubleshooting, I contributed to a seamless technological environment that supported the institution's goals."
       }
     ],
 
     education: [
       {
-        degree: "Master's in Computer Science",
-        school: "University Name",
-        year: "2020"
+        degree: "B.Tech Computer Science and Engineering",
+        school: "Ilahia College of Engineering and Technology",
+        year: "2018 - 2022"
+      },
+      {
+        degree: "Higher Secondary Education",
+        school: "Ilahia Public School",
+        year: "2016 - 2018"
       }
     ]
   },
@@ -36,105 +33,50 @@ export const profile = {
   skills: {
     web: {
       title: "Web Development",
-      items: ["Next.js", "React", "TailwindCSS", "Node.js", "MongoDB", "shadcn/ui", "TypeScript", "Express"]
+      items: ["Next.js", "React", "TailwindCSS", "Node.js", "Firebase", "MongoDB", "shadcn/ui", "TypeScript"]
     },
     ai: {
       title: "AI & Machine Learning",
-      items: ["LangChain", "OpenAI API", "Prompt Engineering", "LLM Fine-tuning", "AI Application Development"]
+      items: ["ChatGPT", "Claude", "Gemini", "DeepSeek", "Replit", "OpenAI API", "Prompt Engineering", "AI Application Development", "AI Agents"]
     },
     tools: {
       title: "Tools & Technologies",
-      items: ["Git", "Docker", "AWS", "Vercel", "VS Code", "Figma"]
-    }
+      items: ["Docker", "Google Cloud", "Vercel", "VS Code", "Cursor", "Cline", "Openrouter", "Git", "GitHub", "Meta Suite"]
+    },
+    hobbies: {
+      title: "Hobbies",
+      items: ["Photoshop", "Premiere Pro", "Illustrator", "Figma", "Unity3d", "Animate", "Sandbox", "UiPath"]
+    }  
   },
 
-  projects: [
-    {
-      title: "AI-Powered Web Application",
-      description: "A sophisticated web application that leverages AI to provide intelligent solutions",
-      image: "/projects/project1.png",
-      technologies: ["Next.js", "OpenAI", "MongoDB", "TailwindCSS"],
-      github: "https://github.com/yourusername/project1",
-      demo: "https://project1-demo.com",
-      featured: true,
-      slug: "ai-powered-web-app",
-      study: {
-        overview: "An innovative web application that combines modern web technologies with AI capabilities to deliver intelligent solutions for users.",
-        challenge: "The main challenge was to create a seamless integration between the frontend interface and AI backend while maintaining real-time performance.",
-        solution: "Implemented a microservices architecture with Next.js for the frontend and separate AI processing services. Used MongoDB for efficient data storage and retrieval.",
-        features: [
-          "Real-time AI processing",
-          "Responsive UI with modern design",
-          "Scalable architecture",
-          "Advanced data visualization"
-        ],
-        results: "The application successfully processes thousands of requests daily with 99.9% uptime and positive user feedback.",
-        techStack: {
-          frontend: ["Next.js", "TailwindCSS", "shadcn/ui"],
-          backend: ["Node.js", "Express", "MongoDB"],
-          ai: ["OpenAI API", "LangChain"],
-          deployment: ["Vercel", "Docker"]
-        }
-      }
-    },
-    {
-      title: "Enterprise Dashboard",
-      description: "Modern dashboard application with real-time data visualization",
-      image: "/projects/project2.png",
-      technologies: ["React", "Node.js", "Express", "PostgreSQL"],
-      github: "https://github.com/yourusername/project2",
-      demo: "https://project2-demo.com",
-      featured: true,
-      slug: "enterprise-dashboard",
-      study: {
-        overview: "A comprehensive dashboard solution for enterprise clients to monitor and analyze their business metrics in real-time.",
-        challenge: "Creating a performant dashboard that could handle large amounts of real-time data while maintaining a smooth user experience.",
-        solution: "Utilized WebSocket connections for real-time updates and implemented efficient data caching strategies.",
-        features: [
-          "Real-time data updates",
-          "Interactive charts and graphs",
-          "Custom reporting tools",
-          "Role-based access control"
-        ],
-        results: "Reduced data analysis time by 60% and improved decision-making efficiency for enterprise clients.",
-        techStack: {
-          frontend: ["React", "D3.js", "Material-UI"],
-          backend: ["Node.js", "Express", "PostgreSQL"],
-          realtime: ["WebSocket", "Redis"],
-          deployment: ["AWS", "Docker"]
-        }
-      }
-    }
-  ],
-
   contact: {
-    email: "your.email@example.com",
-    location: "City, Country",
+    email: "muhammedyazeen10@gmail.com",
+    location: "Muvattupuzha, Kerala, India",
     availability: "Open to opportunities",
     description: "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
     socials: [
       {
         name: "GitHub",
-        url: "https://github.com/yourusername",
+        url: "https://github.com/y4z33n/",
         icon: "github"
       },
       {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/yourusername",
+        url: "https://linkedin.com/in/y4z33n/",
         icon: "linkedin"
       },
       {
-        name: "Twitter",
-        url: "https://twitter.com/yourusername",
-        icon: "twitter"
+        name: "Instagram",
+        url: "https://www.instagram.com/y4z33n/",
+        icon: "instagram"
       }
     ]
   },
 
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername"
+    github: "https://github.com/y4z33n/",
+    linkedin: "https://linkedin.com/in/y4z33n/",
+    instagram: "https://www.instagram.com/y4z33n/"
   },
 
   siteConfig: {
@@ -144,7 +86,7 @@ export const profile = {
     },
     navigation: {
       home: {
-        title: "MY",
+        title: "y4z33n",
         path: "/"
       },
       menu: [
