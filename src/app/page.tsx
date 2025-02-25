@@ -3,7 +3,7 @@ import { projects } from "@/data/projects"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Github, Mail, MapPin, Linkedin, Instagram } from "lucide-react"
+import { Github, Mail, MapPin, Linkedin, Instagram, FileText } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -139,48 +139,65 @@ export default function Home() {
             <div className="max-w-5xl mx-auto">
               <h2 className="text-3xl font-bold mb-12">Projects</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {projects.map((project, index) => (
-                  <Card key={index} className="overflow-hidden flex flex-col">
-                    <div className="relative h-48 w-full bg-muted">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <CardHeader>
-                      <CardTitle>{project.title}</CardTitle>
-                      <CardDescription>{project.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent className="flex-1 flex flex-col">
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {project.technologies.map((tech) => (
-                          <Badge key={tech} variant="secondary">
-                            {tech}
-                          </Badge>
-                        ))}
+                {projects
+                  .filter(project => project.featured)
+                  .slice(0, 2)
+                  .map((project, index) => (
+                    <Card key={index} className="overflow-hidden flex flex-col">
+                      <div className="relative h-48 w-full bg-muted">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-cover"
+                        />
                       </div>
-                      <div className="flex gap-4 mt-auto">
-                        {project.github && (
-                          <Button variant="outline" asChild>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer">
-                              <Github className="mr-2 h-4 w-4" />
-                              GitHub
-                            </a>
+                      <CardHeader>
+                        <CardTitle>{project.title}</CardTitle>
+                        <CardDescription>{project.description}</CardDescription>
+                      </CardHeader>
+                      <CardContent className="flex-1 flex flex-col">
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          {project.technologies.map((tech) => (
+                            <Badge key={tech} variant="secondary">
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
+                        <div className="flex flex-wrap gap-4 mt-auto">
+                          <Button variant="default" asChild>
+                            <Link href={`/projects/${project.slug}`}>
+                              <FileText className="mr-2 h-4 w-4" />
+                              View Case Study
+                            </Link>
                           </Button>
-                        )}
-                        {project.demo && (
-                          <Button asChild>
-                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                              View Demo
-                            </a>
-                          </Button>
-                        )}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
+                          {project.github && (
+                            <Button variant="outline" asChild>
+                              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                <Github className="mr-2 h-4 w-4" />
+                                GitHub
+                              </a>
+                            </Button>
+                          )}
+                          {project.demo && (
+                            <Button variant="secondary" asChild>
+                              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                                View Demo
+                              </a>
+                            </Button>
+                          )}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+              </div>
+              
+              <div className="flex justify-center mt-12">
+                <Button asChild>
+                  <Link href="/projects">
+                    Explore All Projects
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>

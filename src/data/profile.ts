@@ -35,6 +35,10 @@ export const profile = {
       title: "Web Development",
       items: ["Next.js", "React", "TailwindCSS", "Node.js", "Firebase", "MongoDB", "shadcn/ui", "TypeScript"]
     },
+    app: {
+      title: "App Development",
+      items: ["React Native", "Expo", "Android Studio"]
+    },
     ai: {
       title: "AI & Machine Learning",
       items: ["ChatGPT", "Claude", "Gemini", "DeepSeek", "Replit", "OpenAI API", "Prompt Engineering", "AI Application Development", "AI Agents"]
